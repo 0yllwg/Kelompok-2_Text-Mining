@@ -1,5 +1,8 @@
 # Kelompok Text Mining - Proyek Analisis Big Data
 
+Versi Drive:
+https://drive.google.com/drive/folders/11OCVSnJtFuR3UPROy7dQWE03vy-xJXsI?usp=sharing
+
 ## Deskripsi Proyek
 Proyek ini merupakan bagian dari tugas mata kuliah *Analisis Big Data*. Tujuannya adalah membangun pipeline text mining secara end-to-end, mulai dari pengumpulan data berskala besar hingga deployment model dan dashboard interaktif.
 
