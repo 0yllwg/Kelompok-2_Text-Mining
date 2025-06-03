@@ -1,0 +1,70 @@
+===================================================
+📊 DASHBOARD: KLASIFIKASI TOPIK ARTIKEL ILMIAH
+===================================================
+
+TUJUAN:
+Dashboard ini menampilkan hasil klasifikasi dan ekstraksi topik dari kumpulan artikel ilmiah dengan model machine learning & LDA.
+
+------------------------------
+CARA AKSES DASHBOARD
+------------------------------
+1. Buka file Power BI dengan ekstensi .pbix menggunakan Power BI Desktop.
+2. Tunggu hingga semua data dan visualisasi termuat.
+3. Tampilan utama akan langsung menunjukkan dashboard "KLASIFIKASI TOPIK ARTIKEL ILMIAH".
+
+------------------------------
+PENJELASAN TIAP BAGIAN
+------------------------------
+
+1️⃣ DISTRIBUSI BIDANG ILMU (KLASIFIKASI)
+📌 Visual: Pie Chart
+📌 Sumber: Kolom 'prediksi' (hasil klasifikasi)
+📌 Fungsi: Menampilkan proporsi artikel per kategori bidang ilmu.
+📌 Kategori:
+   - 0: Computer Science
+   - 1: Physics
+   - 2: Mathematics
+   - 3: Statistics
+   - 4: Quantitative Biology
+   - 5: Quantitative Finance
+📌 Tips: Hover untuk melihat jumlah artikel dan persentasenya.
+
+2️⃣ TABEL KLASIFIKASI
+📌 Kolom:
+   - prediksi → label numerik
+   - CategoryLabel → nama bidang ilmu
+   - processed_abstract → isi abstrak yang sudah diproses
+📌 Info: Kolom 'processed_abstract' hanya menampilkan baris pertama agar tabel tidak terlalu tinggi.
+
+3️⃣ DISTRIBUSI TOPIK (LDA)
+📌 Visual: Bar Chart
+📌 Sumbu X: dominant_topic (hasil topik utama dari LDA)
+📌 Sumbu Y: jumlah dokumen per topik
+📌 Tips: Warna tiap batang menunjukkan topik berbeda (0 s.d. 7)
+
+4️⃣ TABEL HASIL LDA
+📌 Kolom:
+   - doc_id → ID dokumen
+   - dominant_topic → topik utama
+   - topic_probability → skor dominan
+   - text → bagian isi teks yang digunakan dalam LDA
+📌 Info: Kolom 'text' juga ditampilkan 1 baris saja per dokumen.
+
+------------------------------
+TIPS NAVIGASI
+------------------------------
+✅ Klik legend di chart untuk filter data.
+✅ Gunakan scroll horizontal untuk eksplor tabel.
+✅ Hover untuk lihat detail nilai pada chart.
+
+------------------------------
+CATATAN AKHIR
+------------------------------
+Jika kamu membagikan dashboard ini secara online (Power BI Service), pastikan pengguna:
+- Sudah login ke akun Power BI
+- Mempunyai izin akses ke file
+
+
+========================
+Selamat mengeksplorasi! 
+========================
